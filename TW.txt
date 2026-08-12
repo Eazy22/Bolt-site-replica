@@ -1,0 +1,31 @@
+#install pnpm
+#Install tailwind
+#Anything pertaining to distance is measured in *4
+#mobile first tw
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <h1 class="text-3xl font-bold underline italic bg-amber-800">
+    Hello world!
+  </h1>
+  <p class="text-3xl text-blue-500 font-mono">hello world</p>
+  <p class="italic font-bold">Bye</p>
+  <p class="italic font-bold text-5xl">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum iste ratione incidunt est eum explicabo repudiandae! Explicabo, obcaecati consequatur? A amet adipisci alias consequatur voluptates nesciunt excepturi optio ut dolor.
+  </p>
+  <div class="bg-blue-600 h-100 w-100 ml-10 rounded-2xl">
+    <p class="p-4 text-white text-lg">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe possimus magni rem quasi assumenda quaerat nulla earum cum voluptatum cumque dolores labore, vero, non consequatur facilis ipsum iste reprehenderit atque?
+    </p>
+  </div>
+  <button>click me</button>
+  <a href="#">link</a>
+</body>
+</html>
