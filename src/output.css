@@ -198,6 +198,9 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
+  }
   .mb-3\.5 {
     margin-bottom: calc(var(--spacing) * 3.5);
   }
@@ -218,6 +221,9 @@
   }
   .flex {
     display: flex;
+  }
+  .table {
+    display: table;
   }
   .h-100 {
     height: calc(var(--spacing) * 100);
@@ -246,11 +252,20 @@
   .w-full {
     width: 100%;
   }
+  .flex-grow {
+    flex-grow: 1;
+  }
   .grow {
     flex-grow: 1;
   }
+  .border-collapse {
+    border-collapse: collapse;
+  }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .resize {
+    resize: both;
   }
   .flex-col {
     flex-direction: column;
@@ -269,6 +284,9 @@
   }
   .gap-0 {
     gap: 0px;
+  }
+  .gap-1 {
+    gap: var(--spacing);
   }
   .gap-1\.5 {
     gap: calc(var(--spacing) * 1.5);
@@ -340,6 +358,15 @@
   }
   .bg-\[url\(\'\.\.\/public\/assets\/Index_DT_Media_04_7da373c797\.png\'\)\] {
     background-image: url('../public/assets/Index_DT_Media_04_7da373c797.png');
+  }
+  .bg-\[url\(\'\/public\/assets\/Index_DT_Media_02_a54c235e5e\.png\'\)\] {
+    background-image: url('/public/assets/Index_DT_Media_02_a54c235e5e.png');
+  }
+  .bg-\[url\(\'\/public\/assets\/Index_DT_Media_03_2c3dcdfa7c\.png\'\)\] {
+    background-image: url('/public/assets/Index_DT_Media_03_2c3dcdfa7c.png');
+  }
+  .bg-\[url\(\'\/public\/assets\/Index_DT_Media_04_7da373c797\.png\'\)\] {
+    background-image: url('/public/assets/Index_DT_Media_04_7da373c797.png');
   }
   .bg-cover {
     background-size: cover;
@@ -568,6 +595,10 @@
   .underline {
     text-decoration-line: underline;
   }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
+  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -638,6 +669,11 @@ body {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -654,6 +690,7 @@ body {
       --tw-leading: initial;
       --tw-font-weight: initial;
       --tw-tracking: initial;
+      --tw-outline-style: solid;
       --tw-duration: initial;
     }
   }
